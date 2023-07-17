@@ -4,4 +4,4 @@
 
 This is a basic widget for Garmin watches that shows whether or not it's shorts weather. The widget uses a propriatery algorithm(it really just checks if the temperature is above 17 degrees celcius) to determine if the weather is great for shorts or not.
 
-Pull requests for new models support is more than welcome.
+Pull requests for new models/translations are more than welcome.
