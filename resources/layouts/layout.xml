@@ -1,0 +1,5 @@
+<layout id="MainLayout">
+    <label id="title" text="@Strings.Title" x="center" y="20%" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_SMALL" color="Graphics.COLOR_WHITE" />
+    <label id="answer" text="?" x="center" y="center" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_MEDIUM" />
+    <label id="reason" text="" x="center" y="80%" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Gfx.FONT_SMALL" color="Gfx.COLOR_DK_GRAY" />
+</layout>
