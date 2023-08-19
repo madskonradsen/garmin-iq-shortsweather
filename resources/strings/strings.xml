@@ -1,7 +1,7 @@
 <strings>
     <string id="AppName">Shorts weather</string>
     <string id="Title">Shorts weather?</string>
-    <string id="Yes">Yes</string>
-    <string id="No">No</string>
-    <string id="NoWeatherData">No weather data</string>
+    <string id="Yes" scope="glance">Yes</string>
+    <string id="No" scope="glance">No</string>
+    <string id="NoWeatherData" scope="glance">No weather data</string>
 </strings>

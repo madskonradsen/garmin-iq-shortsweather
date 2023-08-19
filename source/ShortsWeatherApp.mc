@@ -18,9 +18,13 @@ class ShortsWeatherApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as Array<Views or InputDelegates>? {
-        return [ new ShortsWeatherView() ] as Array<Views or InputDelegates>;
+        return [new ShortsWeatherView()] as Array<Views or InputDelegates>;
     }
 
+    (:glance)
+    function getGlanceView() {
+        return [new ShortsWeatherGlanceView()];
+    }
 }
 
 function getApp() as ShortsWeatherApp {

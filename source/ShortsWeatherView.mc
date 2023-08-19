@@ -4,8 +4,6 @@ import Toybox.WatchUi;
 import Toybox.Weather;
 import Toybox.Lang;
 
-const INTEGER_FORMAT = "%d";
-
 class ShortsWeatherView extends WatchUi.View {
 
     function initialize() {
@@ -37,42 +35,21 @@ class ShortsWeatherView extends WatchUi.View {
     }
 
     function drawWeather() {
-        if (!(Toybox has :Weather && Toybox.Weather has :getCurrentConditions)) {
-            // For debugging purposes as this should never happen on the supported devices
-            System.println("The device doesn't support Weather");
-            return;
-        }
-        var currentConditions = Toybox.Weather.getCurrentConditions();
+        var weatherState = ShortsWeatherService.getWeatherState();
 
         var answerText = findDrawableById("answer") as Text;
 
-        // If we don't have weather data available
-        if (currentConditions == null || currentConditions.temperature == null) {
-            answerText.setText(WatchUi.loadResource($.Rez.Strings.NoWeatherData) as String);
-            answerText.setColor(Graphics.COLOR_YELLOW);
-            return;
+        answerText.setText(weatherState.answer);
+        answerText.setColor(weatherState.answerColor);
+
+        if(weatherState.temperature != null) {
+            System.println("LOL");
+            System.println(weatherState.temperature);
+            System.println(weatherState.reason);
+            // Show current temp
+            var reasonText = findDrawableById("reason") as Text;
+            reasonText.setText(weatherState.reason); 
         }
-
-        // Set answer
-        if (currentConditions.temperature >= 17) {
-            answerText.setText(WatchUi.loadResource($.Rez.Strings.Yes) as String);
-            answerText.setColor(Graphics.COLOR_GREEN);
-        } else {
-            answerText.setText(WatchUi.loadResource($.Rez.Strings.No) as String);
-            answerText.setColor(Graphics.COLOR_RED);
-        }
-
-        // Show current temp
-        var reasonText = findDrawableById("reason") as Text;
-        var temperature = currentConditions.temperature;
-
-        if (System.getDeviceSettings().temperatureUnits == System.UNIT_STATUTE) {
-            temperature = (temperature * (9.0 / 5)) + 32;
-        }
-
-        temperature = temperature.format(INTEGER_FORMAT) + "°";
-
-        reasonText.setText(temperature); 
     }
 
 }
