@@ -21,13 +21,7 @@ class ShortsWeatherView extends WatchUi.View {
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() as Void {
-        if (!(Toybox has :Weather && Toybox.Weather has :getCurrentConditions)) {
-            // For debugging purposes as this should never happen on the supported devices
-            System.println("The device doesn't support Weather");
-            return;
-        }
-        var currentConditions = Toybox.Weather.getCurrentConditions();
-        drawWeather(currentConditions);
+        drawWeather();
     }
 
     // Update the view
@@ -42,7 +36,14 @@ class ShortsWeatherView extends WatchUi.View {
     function onHide() as Void {
     }
 
-    hidden function drawWeather(currentConditions) {
+    function drawWeather() {
+        if (!(Toybox has :Weather && Toybox.Weather has :getCurrentConditions)) {
+            // For debugging purposes as this should never happen on the supported devices
+            System.println("The device doesn't support Weather");
+            return;
+        }
+        var currentConditions = Toybox.Weather.getCurrentConditions();
+
         var answerText = findDrawableById("answer") as Text;
 
         // If we don't have weather data available
