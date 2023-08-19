@@ -43,9 +43,6 @@ class ShortsWeatherView extends WatchUi.View {
         answerText.setColor(weatherState.answerColor);
 
         if(weatherState.temperature != null) {
-            System.println("LOL");
-            System.println(weatherState.temperature);
-            System.println(weatherState.reason);
             // Show current temp
             var reasonText = findDrawableById("reason") as Text;
             reasonText.setText(weatherState.reason); 

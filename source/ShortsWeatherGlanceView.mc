@@ -39,7 +39,7 @@ class ShortsWeatherGlanceView extends WatchUi.GlanceView {
         if(weatherState.temperature != null) {
             dc.clear();
             dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
-		    dc.drawText(dc.getWidth(), dc.getHeight() / 2, Graphics.FONT_TINY, weatherState.reason, Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER);
+		    dc.drawText(dc.getWidth() - 5, dc.getHeight() / 2, Graphics.FONT_TINY, weatherState.reason, Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER);
         }
     }
 }

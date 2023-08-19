@@ -48,3 +48,23 @@ vivoactive4.resourcePath = $(vivoactive4.resourcePath);resources-launcher-35x35
 vivoactive4s.resourcePath = $(vivoactive4s.resourcePath);resources-launcher-30x30
 
 legacyherofirstavenger.resourcePath = $(legacyherofirstavenger.resourcePath);resources-launcher-35x35
+legacyherocaptainmarvel.resourcePath = $(legacyherocaptainmarvel.resourcePath);resources-launcher-30x30
+legacysagarey.resourcePath = $(legacysagarey.resourcePath);resources-launcher-30x30
+legacysagadarthvader.resourcePath = $(legacysagadarthvader.resourcePath);resources-launcher-35x35
+
+marqgolfer.resourcePath = $(marqgolfer.resourcePath);resources-launcher-40x40
+marqcaptain.resourcePath = $(marqcaptain.resourcePath);resources-launcher-40x40
+marqadventurer.resourcePath = $(marqadventurer.resourcePath);resources-launcher-40x40
+marqcommander.resourcePath = $(marqcommander.resourcePath);resources-launcher-40x40
+marqathlete.resourcePath = $(marqathlete.resourcePath);resources-launcher-40x40
+marqdriver.resourcePath = $(marqdriver.resourcePath);resources-launcher-40x40
+marqexpedition.resourcePath = $(marqexpedition.resourcePath);resources-launcher-40x40
+marqaviator.resourcePath = $(marqaviator.resourcePath);resources-launcher-40x40
+
+marq2.resourcePath = $(marq2.resourcePath);resources-launcher-60x60
+marq2aviator.resourcePath = $(marq2aviator.resourcePath);resources-launcher-60x60
+
+d2air.resourcePath = $(d2air.resourcePath);resources-launcher-60x60
+d2mach1.resourcePath = $(d2mach1.resourcePath);resources-launcher-60x60
+
+approachs7047mm.resourcePath = $(approachs7047mm.resourcePath);resources-launcher-80x80
