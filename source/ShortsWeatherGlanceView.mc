@@ -1,10 +1,7 @@
 import Toybox.WatchUi;
 import Toybox.Graphics;
-import Toybox.Communications;
 import Toybox.System;
 import Toybox.Timer;
-import Toybox.Time;
-import Toybox.Time.Gregorian;
 
 (:glance)
 class ShortsWeatherGlanceView extends WatchUi.GlanceView {
