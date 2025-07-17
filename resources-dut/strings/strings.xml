@@ -1,6 +1,6 @@
 <strings>
     <string id="AppName">Kortebroekenweer</string>
-    <string id="Title">Korte broek aan?</string>
+    <string id="Title">Korte broek?</string>
     <string id="Yes" scope="glance">Ja</string>
     <string id="No" scope="glance">Nee</string>
     <string id="NoWeatherData" scope="glance">Geen weerdata</string>
