@@ -106,6 +106,7 @@
         <iq:languages>
             <iq:language>dan</iq:language>
             <iq:language>deu</iq:language>
+            <iq:language>nld</iq:language>
         </iq:languages>
         <!--
             Use "Monkey C: Configure Monkey Barrel" from the Visual Studio Code
